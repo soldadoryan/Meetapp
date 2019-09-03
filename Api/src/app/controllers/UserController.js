@@ -24,14 +24,6 @@ class UserController {
   }
 
   async update(req, res) {
-    /*
-      Validações: 
-      + name é string;
-      + email é string;
-      + password é string, minimo de 6 caracteres;
-      + confirmPassword é string, minimo de 6 caracteres e se password estiver 
-      preenchido -> precisa ter o mesmo valor de password;
-    */
 
     const schema = Yup.object().shape({
       name: Yup.string(),
